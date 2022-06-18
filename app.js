@@ -63,34 +63,36 @@
 // Condition 2 - Numbers should be even 
 
 
-// let num = 140
-// let num2 = 150;
-// let sum = 0;
-// for (let i = num; i <= num2; i++) {
-//     if (i % 2 == 0) {
-//         let temp = i;
-//         while (temp > 0) {
-//             let digit = temp % 10;
-//             if (digit == 4) {
-//                 sum = sum * i;
-//             }
-//             temp = Math.floor(temp / 100);
-//         }
-//     }
-// }
-// console.log(sum);
-
-
-let num = 40;
+let num = 40
 let num2 = 50;
 let sum = 1;
-for(let i = num; i <= num2; i++){
-  let  last_digit = Math.floor((i % 100) / 10);
-    if(last_digit == 4 && i % 2 == 0){
-        sum = sum * i;
+for (let i = num; i <= num2; i++) {
+    if (i % 2 == 0) {
+        let temp = i;
+        while (temp > 0) {
+            let digit = Math.floor((temp % 100)/10);
+            if (digit == 4) {
+                sum = sum * i;
+            }
+            temp = Math.floor(temp / 10);
+        }
     }
 }
 console.log(sum);
+
+
+// another way
+
+// let num = 40;
+// let num2 = 50;
+// let sum = 1;
+// for(let i = num; i <= num2; i++){
+//   let  last_digit = Math.floor((i % 100) / 10);
+//     if(last_digit == 4 && i % 2 == 0){
+//         sum = sum * i;
+//     }
+// }
+// console.log(sum);
 
 
                     // ----Question 6 ----------    
