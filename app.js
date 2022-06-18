@@ -63,22 +63,22 @@
 // Condition 1 - Second last digit of number is 4
 // Condition 2 - Numbers should be even 
 
-let num = parseInt(process.argv[2]);
-let num2 = parseInt(process.argv[3]);
-let sum = 0;
-for (let i = num; i <= num2; i++) {
-    if (i % 2 == 0) {
-        let temp = i;
-        while (temp > 0) {
-            let digit = temp % 10;
-            if (digit === 4) {
-                sum = sum + i;
-            }
-            temp = Math.floor(temp / 10);
-        }
-    }
-}
-console.log(sum);
+// let num = parseInt(process.argv[2]);
+// let num2 = parseInt(process.argv[3]);
+// let sum = 0;
+// for (let i = num; i <= num2; i++) {
+//     if (i % 2 == 0) {
+//         let temp = i;
+//         while (temp > 0) {
+//             let digit = temp % 10;
+//             if (digit === 4) {
+//                 sum = sum + i;
+//             }
+//             temp = Math.floor(temp / 10);
+//         }
+//     }
+// }
+// console.log(sum);
 
 
 
@@ -102,16 +102,16 @@ console.log(sum);
                     // --------Question 7----------
 //  Check whether the given number is equal to its reverse number or not
 
-// let number = parseInt(process.argv[2]);
-// let reverse = 0;
-// let temp = number;
-// while (temp > 0) {
-//     let digit = temp % 10;
-//     reverse = reverse * 10 + digit;
-//     temp = Math.floor(temp / 10);
-// }
-// if (number === reverse) {
-//     console.log(number + " is a reverse number");
-// } else {
-//     console.log(number + " is not a reverse number");
-// }
+let number = parseInt(process.argv[2]);
+let reverse = 0;
+let temp = number;
+while (temp > 0) {
+    let digit = temp % 10;
+    reverse = reverse * 10 + digit;
+    temp = Math.floor(temp / 10);
+}
+if (number === reverse) {
+    console.log(number + " is a reverse number");
+} else {
+    console.log(number + " is not a reverse number");
+}
