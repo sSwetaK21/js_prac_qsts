@@ -1,12 +1,12 @@
 
 // Using a loop print all odd numbers up to and including n. Don’t include 0. 
 
-let number = parseInt(process.argv[2]);
-for( let i = 1; i <= number; i++){
-    if(i % 2 !== 0){
-        console.log(i);
-    }
-}
+// let number = parseInt(process.argv[2]);
+// for( let i = 1; i <= number; i++){
+//     if(i % 2 !== 0){
+//         console.log(i);
+//     }
+// }
 
                 // --------Question 2----------
 
@@ -18,9 +18,7 @@ for( let i = 1; i <= number; i++){
 // for (let i = num; i <= num2; i++) {
 //     if (i % 2 === 0) {
 //         sum = sum + i;
-
 //     }
-
 // }
 // console.log(sum);
 
