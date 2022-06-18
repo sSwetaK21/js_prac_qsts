@@ -87,31 +87,30 @@
 // Take a number and return all the even digits of the number.
 
 
-// let number = 1289;
-//     let sum = 0;
-//     while (number > 0) {
-//         let digit = number % 10;
-//         if (digit % 2 == 0) {
-//             sum = sum + digit;
-//         }
-//         number = Math.floor(number / 10);
-//     }
-//     console.log(sum);
+let number = 1289;
+    let sum = 0;
+    while (number > 0) {
+        let digit = number % 10;
+        if (digit % 2 == 0) {
+             console.log(digit);
+        }
+        number = Math.floor(number / 10);
+    }
 
 
                     // --------Question 7----------
 //  Check whether the given number is equal to its reverse number or not
 
-let number = 121;
-let reverse = 0;
-let temp = number;
-while (temp > 0) {
-    let digit = temp % 10;
-    reverse = reverse * 10 + digit;
-    temp = Math.floor(temp / 10);
-}
-if (number == reverse) {
-    console.log(number + " is a reverse number");
-} else {
-    console.log(number + " is not a reverse number");
-}
+// let number = 121;
+// let reverse = 0;
+// let temp = number;
+// while (temp > 0) {
+//     let digit = temp % 10;
+//     reverse = reverse * 10 + digit;
+//     temp = Math.floor(temp / 10);
+// }
+// if (number == reverse) {
+//     console.log(number + " is a reverse number");
+// } else {
+//     console.log(number + " is not a reverse number");
+// }
