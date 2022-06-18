@@ -32,9 +32,7 @@
 // let last = number % 10;
 // while (first >= 10) {
 //    first = first / 10;
-  
 // }
-
 // console.log(Math.floor(first));
 // console.log(last);
 
@@ -43,7 +41,6 @@
 // Check whether the given number is an armstrong number or not. 
 // ---Important Note---
 // An Armstrong number is a number that is equal to the sum of the cubes of its own digits.
-
 
 // let number = parseInt(process.argv[2]);
 
@@ -66,25 +63,24 @@
 // Condition 1 - Second last digit of number is 4
 // Condition 2 - Numbers should be even 
 
-// let num = parseInt(process.argv[2]);
-// let num2 = parseInt(process.argv[3]);
-// let sum = 0;
-// for (let i = num; i <= num2; i++) {
-//     if (i % 2 == 0) {
-//         let temp = i;
-//         while (temp > 0) {
-//             let digit = temp % 10;
-//             if (digit === 4) {
-//                 sum = sum + i;
-//             }
-//             temp = Math.floor(temp / 10);
-//         }
-//     }
-// }
-// console.log(sum);
+let num = parseInt(process.argv[2]);
+let num2 = parseInt(process.argv[3]);
+let sum = 0;
+for (let i = num; i <= num2; i++) {
+    if (i % 2 == 0) {
+        let temp = i;
+        while (temp > 0) {
+            let digit = temp % 10;
+            if (digit === 4) {
+                sum = sum + i;
+            }
+            temp = Math.floor(temp / 10);
+        }
+    }
+}
+console.log(sum);
 
-// 25 / 10 = 2.5
-// 25 % 10 = 5
+
 
                     // ----Question 6 ----------    
 
