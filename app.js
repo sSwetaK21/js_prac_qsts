@@ -63,23 +63,34 @@
 // Condition 2 - Numbers should be even 
 
 
-// let num = 10;
-// let num2 = 20;
+// let num = 140
+// let num2 = 150;
 // let sum = 0;
 // for (let i = num; i <= num2; i++) {
 //     if (i % 2 == 0) {
 //         let temp = i;
 //         while (temp > 0) {
 //             let digit = temp % 10;
-//             if (digit === 4) {
-//                 sum = sum + i;
+//             if (digit == 4) {
+//                 sum = sum * i;
 //             }
-//             temp = Math.floor(temp / 10);
+//             temp = Math.floor(temp / 100);
 //         }
 //     }
 // }
 // console.log(sum);
 
+
+let num = 40;
+let num2 = 50;
+let sum = 1;
+for(let i = num; i <= num2; i++){
+  let  last_digit = Math.floor((i % 100) / 10);
+    if(last_digit == 4 && i % 2 == 0){
+        sum = sum * i;
+    }
+}
+console.log(sum);
 
 
                     // ----Question 6 ----------    
@@ -87,14 +98,14 @@
 // Take a number and return all the even digits of the number.
 
 
-let number = 1289;
-    while (number > 0) {
-        let digit = number % 10;
-        if (digit % 2 == 0) {
-             console.log(digit);
-        }
-        number = Math.floor(number / 10);
-    }
+// let number = 1289;
+//     while (number > 0) {
+//         let digit = number % 10;
+//         if (digit % 2 == 0) {
+//              console.log(digit);
+//         }
+//         number = Math.floor(number / 10);
+//     }
 
 
                     // --------Question 7----------
