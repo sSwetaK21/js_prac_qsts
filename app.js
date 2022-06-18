@@ -88,7 +88,6 @@
 
 
 let number = 1289;
-    let sum = 0;
     while (number > 0) {
         let digit = number % 10;
         if (digit % 2 == 0) {
