@@ -1,7 +1,7 @@
 
 // Using a loop print all odd numbers up to and including n. Don’t include 0. 
 
-// let number = parseInt(process.argv[2]);
+// let number = 10;
 // for( let i = 1; i <= number; i++){
 //     if(i % 2 !== 0){
 //         console.log(i);
@@ -12,8 +12,8 @@
 
 // Print the sum of all even numbers in a range from a to b. (Including a,b)
 
-// let num = parseInt(process.argv[2]);
-// let num2 = parseInt(process.argv[3]);
+// let num = 10;
+// let num2 = 20;
 // let sum = 0;
 // for (let i = num; i <= num2; i++) {
 //     if (i % 2 === 0) {
@@ -27,7 +27,7 @@
 
 // Write a program to read the first and last digit of a number
 
-// let number = parseInt(process.argv[2]);
+// let number = 2345;
 // let first = number;
 // let last = number % 10;
 // while (first >= 10) {
@@ -42,8 +42,7 @@
 // ---Important Note---
 // An Armstrong number is a number that is equal to the sum of the cubes of its own digits.
 
-// let number = parseInt(process.argv[2]);
-
+//  let number = 153;
 // let sum = 0;
 // let temp = number;
 // while (temp > 0) {
@@ -63,8 +62,9 @@
 // Condition 1 - Second last digit of number is 4
 // Condition 2 - Numbers should be even 
 
-// let num = parseInt(process.argv[2]);
-// let num2 = parseInt(process.argv[3]);
+
+// let num = 10;
+// let num2 = 20;
 // let sum = 0;
 // for (let i = num; i <= num2; i++) {
 //     if (i % 2 == 0) {
@@ -87,7 +87,7 @@
 // Take a number and return all the even digits of the number.
 
 
-//  let number = parseInt(process.argv[2]);
+// let number = 1289;
 //     let sum = 0;
 //     while (number > 0) {
 //         let digit = number % 10;
@@ -102,7 +102,7 @@
                     // --------Question 7----------
 //  Check whether the given number is equal to its reverse number or not
 
-let number = parseInt(process.argv[2]);
+let number = 121;
 let reverse = 0;
 let temp = number;
 while (temp > 0) {
@@ -110,7 +110,7 @@ while (temp > 0) {
     reverse = reverse * 10 + digit;
     temp = Math.floor(temp / 10);
 }
-if (number === reverse) {
+if (number == reverse) {
     console.log(number + " is a reverse number");
 } else {
     console.log(number + " is not a reverse number");
